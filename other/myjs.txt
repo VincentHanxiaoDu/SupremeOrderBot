@@ -1,0 +1,27 @@
+// Photo Name of item
+var target = 'r3cO9JxIjiI'
+
+// Your size
+var preferredSize = "Large"; // "Small", "Medium", "Large", "XLarge"
+
+//Address info
+var billing_name = "";
+var order_email = "";
+var order_tel = "";
+var order_address = "";
+var order_address2 = ""
+var order_billing_zip = "";
+var order_billing_city = "";
+var order_billing_state = "";
+var order_billing_country = ""; // "USA", "CANADA"
+
+//Payment info
+var cnb = "";
+var month = "";
+var year = "";
+var vval = "";
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+

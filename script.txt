@@ -1,0 +1,51 @@
+function payment() {
+        if (document.getElementById('checkout_form')) {
+          /*
+          Script to use on checkout screen
+          */
+	  if ($('select#order_billing_country')) {
+            $('select#order_billing_country').val(order_billing_country);
+          } 
+          if ($('input#order_billing_name')) {
+            $('input#order_billing_name').attr('value', billing_name);
+          }
+          if ($('input#order_email')) {
+            $('input#order_email').attr('value', order_email);
+          }
+          if ($('input#order_tel')) {
+            $('input#order_tel').attr('value', order_tel);
+          }
+          if ($('input#bo')) {
+            $('input#bo').attr('value', order_address);
+          }
+          if ($('input#oba3')) {
+            $('input#oba3').attr('value', order_address2);
+          }
+          if ($('input#order_billing_zip')) {
+            $('input#order_billing_zip').attr('value', order_billing_zip);
+          }
+          if ($('input#order_billing_city')) {
+            $('input#order_billing_city').attr('value', order_billing_city);
+          }
+          if ($('input#nnaerb')) {
+            $('input#nnaerb').attr('value', cnb);
+          }
+          if ($('select#credit_card_month')) {
+            $('select#credit_card_month').val(month);$('select#credit_card_year').val(year);
+          }
+          if ($('input#orcer')) {
+            $('input#orcer').attr('value', vval);
+          }
+    
+          // Check the "I Accept Terms..." button
+          if ($('.iCheck-helper')[1]){
+            $('.iCheck-helper')[1].click();
+          }
+          if ($('.checkbox')[1]) {
+            $('.checkbox')[1].click();
+          }
+        } else
+          setTimeout(function(){ payment(); }, 10);
+    return;
+    }
+    payment()
